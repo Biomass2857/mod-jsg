@@ -11,9 +11,9 @@ import dev.tauri.jsgcore.common.item.JSGItem;
 import dev.tauri.jsgcore.common.registry.CoreTabs;
 import dev.tauri.jsgcore.common.util.IUpgrade;
 import net.minecraft.network.chat.Component;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
 
 import javax.annotation.ParametersAreNonnullByDefault;
@@ -29,7 +29,7 @@ public class ExtendedAddressDialingCrystal extends JSGItem implements IDHDUpgrad
 
     @Override
     @ParametersAreNonnullByDefault
-    public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> components, TooltipFlag tooltipFlag) {
+    public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> components, TooltipFlag tooltipFlag) {
         ItemHelper.applyGenericToolTip(this.getDescriptionId(), components, tooltipFlag);
     }
 
