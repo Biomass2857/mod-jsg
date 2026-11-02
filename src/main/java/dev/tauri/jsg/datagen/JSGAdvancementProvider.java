@@ -159,7 +159,7 @@ public class JSGAdvancementProvider extends CoreAdvancementProvider {
                         true,
                         false
                 )
-                .addCriterion("get_static_address_crystal", InventoryChangeTrigger.TriggerInstance.hasItems(JSGItems.CRYSTAL_ADDRESS_EXTENDED.get()))
+                .addCriterion("get_static_address_crystal", InventoryChangeTrigger.TriggerInstance.hasItems(JSGItems.CRYSTAL_ADDRESS_STATIC.get()))
                 .save(saver, JSGAdvancements.OBTAIN_STATIC_ADDRESS_CRYSTAL, fileHelper);
 
 
@@ -301,8 +301,8 @@ public class JSGAdvancementProvider extends CoreAdvancementProvider {
                                         .source(EntityPredicate.Builder.entity()
                                                 .equipment(EntityEquipmentPredicate.Builder.equipment()
                                                         .mainhand(ItemPredicate.Builder.item()
-                                                                .of(JSGItems.DIALING_GLOVES.get()))))))
-                                .save(saver, JSGAdvancements.HIT_WITH_GLOVES, fileHelper);
+                                                                .of(JSGItems.DIALING_GLOVES.get())))))))
+                .save(saver, JSGAdvancements.HIT_WITH_GLOVES, fileHelper);
 
         AdvancementHolder pg_gate = Advancement.Builder.advancement()
                 .parent(mw_gate)
