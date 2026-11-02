@@ -79,5 +79,9 @@ public class JSGItemTagGenerator extends ItemTagsProvider {
         tag(ItemTags.create(JSGMapping.rl(Integrations.TCONSTRUCT.modNames.getFirst(), "casts/single_use")))
                 .addOptional(JSGMapping.rl(JSG.MOD_ID, "iris_blade_sand_cast"))
                 .addOptional(JSGMapping.rl(JSG.MOD_ID, "iris_blade_red_sand_cast"));
+
+        // Tools
+        tag(JSGItemTags.DIALING_GLOVES)
+                .add(JSGItems.DIALING_GLOVES.get());
     }
 }

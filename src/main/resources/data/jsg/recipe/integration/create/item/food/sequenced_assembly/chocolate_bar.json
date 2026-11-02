@@ -1,18 +1,18 @@
 {
-  "type": "create:sequenced_assembly",
-  "conditions": [
+  "neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "create"
     }
   ],
+  "type": "create:sequenced_assembly",
   "ingredient": {
     "item": "minecraft:paper"
   },
   "loops": 1,
   "results": [
     {
-      "item": "jsg:chocolate_bar"
+      "id": "jsg:chocolate_bar"
     }
   ],
   "sequence": [
@@ -28,7 +28,7 @@
       ],
       "results": [
         {
-          "item": "jsg:incomplete_chocolate_bar"
+          "id": "jsg:incomplete_chocolate_bar"
         }
       ]
     },
@@ -41,12 +41,12 @@
         {
           "amount": 250,
           "fluid": "create:chocolate",
-          "nbt": {}
+          "type": "fluid_stack"
         }
       ],
       "results": [
         {
-          "item": "jsg:incomplete_chocolate_bar"
+          "id": "jsg:incomplete_chocolate_bar"
         }
       ]
     },
@@ -62,7 +62,7 @@
       ],
       "results": [
         {
-          "item": "jsg:incomplete_chocolate_bar"
+          "id": "jsg:incomplete_chocolate_bar"
         }
       ]
     },
@@ -75,12 +75,12 @@
       ],
       "results": [
         {
-          "item": "jsg:incomplete_chocolate_bar"
+          "id": "jsg:incomplete_chocolate_bar"
         }
       ]
     }
   ],
   "transitionalItem": {
-    "item": "jsg:incomplete_chocolate_bar"
+    "id": "jsg:incomplete_chocolate_bar"
   }
 }
